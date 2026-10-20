@@ -1,0 +1,13 @@
+
+---
+
+## **requirements.txt**
+
+streamlit
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+Pillow
+

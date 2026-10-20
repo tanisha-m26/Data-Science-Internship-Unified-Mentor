@@ -1,0 +1,56 @@
+Tanisha@LAPTOP-BOQM1OI5 MINGW64 /d/Instagram-fake-spammer-genuine-accounts
+$ python train_model.py
+Loading data...
+Train shape: (576, 12)
+Test shape: (120, 12)
+
+Training Logistic Regression...
+Logistic Regression Accuracy: 0.9130
+              precision    recall  f1-score   support
+
+           0       0.88      0.97      0.92        58
+           1       0.96      0.86      0.91        57
+
+    accuracy                           0.91       115
+   macro avg       0.92      0.91      0.91       115
+weighted avg       0.92      0.91      0.91       115
+
+
+Training Random Forest...
+Random Forest Accuracy: 0.9478
+              precision    recall  f1-score   support
+
+           0       0.95      0.95      0.95        58
+           1       0.95      0.95      0.95        57
+
+    accuracy                           0.95       115
+   macro avg       0.95      0.95      0.95       115
+weighted avg       0.95      0.95      0.95       115
+
+
+Training Gradient Boosting...
+Gradient Boosting Accuracy: 0.9478
+              precision    recall  f1-score   support
+
+           0       0.95      0.95      0.95        58
+           1       0.95      0.95      0.95        57
+
+    accuracy                           0.95       115
+   macro avg       0.95      0.95      0.95       115
+weighted avg       0.95      0.95      0.95       115
+
+
+✅ Best Model: Random Forest (Accuracy: 0.9478)
+
+Retraining best model on full dataset...
+✅ Final model trained successfully.
+
+Sample test predictions:
+   predicted_fake
+0               1
+1               1
+2               0
+3               0
+4               1
+
+✅ Model saved at: D:\Instagram-fake-spammer-genuine-accounts\notebooks\best_instagram_fake_spammer_model.pkl

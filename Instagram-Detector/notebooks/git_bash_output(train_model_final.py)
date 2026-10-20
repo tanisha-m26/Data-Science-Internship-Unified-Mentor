@@ -1,0 +1,26 @@
+Tanisha@LAPTOP-BOQM1OI5 MINGW64 /d/Instagram-fake-spammer-genuine-accounts
+$ python train_model_final.py
+📥 Loading data...
+Train shape: (576, 12)
+Test shape: (120, 12)
+D:\Instagram-fake-spammer-genuine-accounts\train_model_final.py:88: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.countplot(x=target, data=train_df, palette='coolwarm')
+
+🔍 Performing GridSearchCV for models...
+
+Tuning Random Forest...
+Best Params for Random Forest: {'clf__max_depth': 15, 'clf__n_estimators': 200}
+Accuracy: 0.9478, F1: 0.9474
+
+Tuning Gradient Boosting...
+Best Params for Gradient Boosting: {'clf__learning_rate': 0.05, 'clf__n_estimators': 200}
+Accuracy: 0.9478, F1: 0.9474
+
+Tuning Logistic Regression...
+Best Params for Logistic Regression: {'clf__C': 10}
+Accuracy: 0.9391, F1: 0.9358
+
+🏆 Best Model: Random Forest (Accuracy: 0.9478)
