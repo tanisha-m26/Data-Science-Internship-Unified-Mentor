@@ -1,0 +1,26 @@
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment / virtualenv
+.env
+.venv
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Ignore zip files in results_archive
+results_archive/*.zip
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
