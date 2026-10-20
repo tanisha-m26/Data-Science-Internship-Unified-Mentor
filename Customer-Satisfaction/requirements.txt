@@ -1,0 +1,20 @@
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+catboost
+optuna
+imbalanced-learn
+pyyaml
+matplotlib
+plotly
+shap
+openpyxl
+sqlalchemy
+psycopg2-binary # for PostgreSQL; swap to mysqlclient or PyMySQL if MySQL
+pyarrow
+
+streamlit
+seaborn
+

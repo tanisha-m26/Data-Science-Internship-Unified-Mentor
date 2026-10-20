@@ -1,0 +1,45 @@
+project:
+task: classification # or regression
+target: satisfaction_score # or nps_label
+random_seed: 42
+test_size: 0.2
+cv_folds: 5
+
+
+paths:
+data_path: "data/customer_tickets.csv"
+model_path: "models/model.pkl"
+raw: data/raw
+interim: data/interim
+processed: data/processed
+models: models
+
+
+sql:
+dialect: postgresql # or mysql
+uri_env: DATABASE_URL # read from environment variable
+
+
+features:
+categorical:
+- channel
+- region
+- product
+- subscription_plan
+numeric:
+- tenure_days
+- spend_90d
+- tickets_30d
+- delivery_rate
+- response_time
+datetime:
+- last_purchase_ts
+
+
+model:
+algorithm: lightgbm # xgboost | catboost | rf | logistic
+class_weights: balanced
+search:
+sampler: tpe
+n_trials: 50
+timeout_min: 30
