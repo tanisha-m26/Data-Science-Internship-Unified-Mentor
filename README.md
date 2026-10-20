@@ -15,7 +15,7 @@ The repository is organized into distinct subdirectories, each containing its ow
 
 ```text
 Data-Science-Internship-Unified-Mentor/
-├── project1-folder/             # Live Stock Application Tracker
+├── stock-app/             # Live Stock Application Tracker
 ├── Supply-Chain-Management/     # SCM Relational Database & Dashboard
 ├── Instagram-Detector/          # Streamlit Spammer/Fake Account Classifier
 ├── Healthcare-Recommendation/   # Predictive Diagnostics & Recommendations
@@ -26,7 +26,7 @@ Data-Science-Internship-Unified-Mentor/
 
 ## 📊 Comprehensive Project Breakdown
 
-### 1. Stock Market Application (`project1-folder`)
+### 1. Stock Market Application (`stock-app`)
 *   **Domain:** Financial Markets & Time-Series Data
 *   **Core Tech:** Python, Pandas, Matplotlib, APIs
 *   **Overview:** An analytical pipeline designed to track, clean, and visualize real-time stock pricing trends, providing key insights into moving averages and volatility indicators.
